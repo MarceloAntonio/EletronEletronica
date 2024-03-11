@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link
+      rel="icon" href="./imgs/ELetron eletrono.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <span id="loader"></span>
+      <div id="lefttext">
+        <img src="./imgs/ELetron eletrono.png" />
+      </div>
+      <div id="rightlogin">
+        <div id="login">
+          <h1 id="titlelogin">LOGIN</h1>
+          <div id="textfield">
+            <label for="usuario"> Usuário </label>
+            <input id="user" type="text" name="usuario" placeholder="Usuário" autofocus />
+          </div>
+
+          <div id="textfield">
+            <label for="Senha"> Senha </label>
+            <input
+              id="senha"
+              type="password"
+              name="Senha"
+              placeholder="Senha"
+            />
+          </div>
+          <button id="btnlogin" onclick="validacaolgn()">Entrar</button>
+          <a href="#"> <p id="esqueci">Esqueci Minha Senha</p> </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

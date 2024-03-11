@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+@import url("https://fonts.cdnfonts.com/css/minecraft-4");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #242629;
+}
+
+#main button input label {
+  font-family: "JetBrains Mono", monospace;
+}
+
+#lefttext {
+  color: #94a1b2;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffffe;
+}
+
+#lefttext img {
+  width: 400px;
+}
+
+#rightlogin {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login * {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#login {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 60%;
+  background-color: #16161a;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 30px;
+}
+
+#textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+  color: #94a1b2;
+  margin: 10px 0;
+}
+#titlelogin {
+  font-weight: 800;
+  color: #fffffe;
+  letter-spacing: 1.5px;
+}
+
+#textfield label {
+  margin-bottom: 10px;
+}
+
+#textfield input {
+  width: 100%;
+  border: none;
+  font-size: 12pt;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 6px;
+  outline: none;
+}
+
+#textfield input::placeholder {
+  border: none;
+  outline: none;
+}
+
+#btnlogin {
+  width: 100%;
+  margin: 30px 20px 20px;
+  letter-spacing: 1.2px;
+  border-radius: 9px;
+  text-transform: uppercase;
+  font-family: "noto-sans", sans-serif;
+  font-weight: 800;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: 1000ms;
+}
+
+#btnlogin:active {
+  transform: translateY(2px);
+}
+
+#btnlogin:hover {
+  background-color: #959595;
+}
+
+#esqueci {
+  color: #fffffe;
+  text-decoration: underline white;
+  cursor: pointer;
+  margin: 0%;
+  font-weight: 400;
+}
+
+#esqueci:hover {
+  color: #959595;
+  text-decoration: underline #959595;
+}
+
+#loader {
+  position: absolute;
+  top: -1%;
+  left: 50%;
+  z-index: 3;
+  display: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  border: 10px solid;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite alternate;
+}
+
+#bodyhome {
+  background: url(./imgs/blob-scene-haikei.svg) no-repeat center/cover;
+  font-family: "JetBrains Mono", monospace;
+}
+
+#cabeca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #16161a;
+  gap: 400px;
+}
+
+#cabeca header {
+  align-items: center;
+}
+
+#cabeca nav {
+  color: #fffffe;
+  background-color: #16161a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 5px;
+  margin-right: 60px;
+}
+
+#btnhomelog {
+  gap: 10px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0px 1px 1px;
+  transition: 2175ms;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#btnhomelog:hover {
+  transition: 2175ms;
+  transform: scale(1.1);
+  background-color: #fff;
+  color: #000000;
+  border: solid 2px #000000;
+}
+
+#cabeca img {
+  width: 100px;
+}
+
+#links {
+  transition: 1000ms;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#links:hover {
+  transform: scale(1.5);
+}
+
+#ilustra {
+  display: flex;
+  margin: 20px;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+#apresentacao {
+  padding: 10px;
+  width: 40%;
+  background-color: #ffffff8a;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#apresentacao p {
+  font-size: 15pt;
+  font-weight: 400;
+  text-align: center;
+}
+
+#apresentacao button {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#fotos {
+  width: 40%;
+  height: 60%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ft1 {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+#fotos img {
+  width: 20vw;
+  border-radius: 5px;
+}
+
+#servicos {
+  position: absolute;
+  right: 35%;
+  bottom: 3%;
+  background-color: #ffffff8a;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9px;
+  width: 400px;
+  font-size: 15pt;
+  font-weight: 400;
+  text-align: left;
+  height: 480px;
+}
+
+#sobre {
+  position: absolute;
+  right: 35%;
+  bottom: 3%;
+  background-color: #ffffff8a;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9px;
+  width: 400px;
+  font-size: 15pt;
+  font-weight: 400;
+  text-align: left;
+}
+
+#contatos {
+  position: absolute;
+  right: 35%;
+  bottom: 3%;
+  background-color: #ffffff8a;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9px;
+  width: 400px;
+  font-size: 15pt;
+  font-weight: 400;
+  text-align: left;
+}
+
+#secoes {
+  align-items: baseline;
+}
+
+.section {
+  display: none; /* Inicialmente oculta */
+  opacity: 0;
+  transform: translateY(
+    20px
+  ); /* Adicionando um deslocamento inicial para cima */
+  text-align: center;
+  padding: 50px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.section.active {
+  display: block; /* Exibe quando a classe active é aplicada */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Adicionando classe para animação de slide-in */
+.slide-in {
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" href="./imgs/ELetron eletrono.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="bodyhome">
+    <header id="cabeca">
+      <img src="./imgs/ELetron_eletrono-removebg-preview-modified.png" />
+      <nav>
+        <button id="links" onclick="changeSection('servicos')">serviços</button>
+        <button id="links" onclick="changeSection('sobre')">sobre</button>
+        <button id="links" onclick="changeSection('contatos')">contatos</button>
+      </nav>
+      <a href="./login.html"><button id="btnhomelog">Login</button></a>
+    </header>
+
+    <div id="ilustra" class="section slide-in active">
+      <div id="apresentacao">
+        <h2>Inovação Eletrônica ao Seu Alcance</h2>
+        <p>
+          Explore o universo da eletrônica conosco! Somos especialistas em
+          reparos de celulares e dispositivos eletrônicos, além de criar
+          projetos inovadores usando a magia dos circuitos. Conecte-se à
+          excelência em serviços eletrônicos e descubra soluções que transformam
+          ideias em realidade. Sua jornada eletrônica começa aqui.
+        </p>
+        <button class="button-30" onclick="changeSection('sobre')">
+          Saiba Mais Sobre Nós
+        </button>
+      </div>
+
+      <div id="fotos">
+        <img id="ft1" src="./imgs/Printed circuit board-bro.svg" alt="" />
+      </div>
+    </div>
+
+    <div id="secoes">
+      <div id="sobre" class="section slide-in">
+        <h1>Sobre</h1>
+        <p>
+          Imagine dois entusiastas apaixonados por eletrônicos: Luciano e seu
+          filho Marcelo. Juntos, decidiram transformar essa paixão em algo
+          extraordinário - assim nasceu a Eletron Eletrônica, uma fusão de
+          experiência e entusiasmo.<br />
+          <br />
+          Na Eletron Eletrônica, a paixão pela eletrônica está no centro de tudo
+          o que fazemos. Não somos apenas técnicos; somos sonhadores que
+          transformam desafios em oportunidades emocionantes.
+        </p>
+      </div>
+
+      <div id="contatos" class="section slide-in">
+        <h1>contatos</h1>
+
+        Atendimento Geral: <br />
+        Email: contato@eletroneletronica.com <br />
+        Telefone: (XX) XXXX-XXXX <br />
+        <br />
+        Suporte Técnico: <br />
+        Email: suporte@eletroneletronica.com <br />
+        Telefone: (XX) XXXX-XXXX <br />
+        <br />
+        Sugestões e Feedback: <br />
+        Email: feedback@eletroneletronica.com <br />
+        Telefone: (XX) XXXX-XXXX <br />
+        <br />
+        Redes Sociais: <br />
+        Facebook <ion-icon name="logo-facebook"></ion-icon> <br />
+        Instagram <ion-icon name="logo-instagram"></ion-icon><br />
+        Github <ion-icon name="logo-github"></ion-icon> <br />
+      </div>
+      <div id="servicos" class="section slide-in">
+        <h1>Serviços Oferecidos:</h1>
+        <p>
+          Reparos Especializados: Corrigimos problemas, de bugs a falhas de
+          hardware, utilizando nossa expertise em programação C.<br />
+          <br />
+          Otimização de Desempenho: Aceleramos seus dispositivos para garantir
+          uma experiência eletrônica mais rápida e eficiente.<br />
+          <br />
+          Desenvolvimento Customizado: Transformamos suas ideias em realidade,
+          criando softwares e firmwares personalizados para atender às suas
+          necessidades exclusivas.
+        </p>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
