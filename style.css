@@ -334,7 +334,7 @@ a {
 #servicos {
   position: absolute;
   right: 35%;
-  bottom: 3%;
+  bottom: 5.5%;
   background-color: #ffffff8a;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
@@ -342,16 +342,18 @@ a {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9px;
   width: 400px;
-  font-size: 15pt;
+  font-size: 14pt;
   font-weight: 400;
   text-align: left;
-  height: 480px;
+  height: 550px;
+  padding-top: 0;
+  padding-bottom: 30px;
 }
 
 #sobre {
   position: absolute;
   right: 35%;
-  bottom: 3%;
+  bottom: 10.5%;
   background-color: #ffffff8a;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
@@ -362,26 +364,27 @@ a {
   font-size: 15pt;
   font-weight: 400;
   text-align: left;
+  padding-top: 0;
+  padding-bottom: 10px;
 }
 
 #contatos {
   position: absolute;
-  right: 35%;
-  bottom: 3%;
+  right: 32%;
+  bottom: 8%;
   background-color: #ffffff8a;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9px;
-  width: 400px;
-  font-size: 15pt;
+  width: 500px;
+  font-size: 14pt;
   font-weight: 400;
   text-align: left;
-}
-
-#secoes {
-  align-items: baseline;
+  padding-top: 0;
+  padding-bottom: 10px;
+  height: 550px;
 }
 
 .section {
